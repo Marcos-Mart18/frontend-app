@@ -1,0 +1,18 @@
+<p-table [value]="posts" [tableStyle]="{ 'min-width': '50rem' }">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Code</th>
+            <th>Titulo</th>
+            <th>Descripcion</th>
+            <th>Accion</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-posts>
+        <tr>
+            <td>{{ posts.post_id }}</td>
+            <td>{{ posts.titulo }}</td>
+            <td>{{ posts.descripcion }}</td>
+            <td>accion</td>
+        </tr>
+    </ng-template>
+</p-table>
